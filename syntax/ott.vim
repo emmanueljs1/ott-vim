@@ -12,11 +12,11 @@ syn match   ottPuncuation           "::=\|::\|<::\|---\+\|\.\.\| | \|</\|/>\|//"
 syn match   ottComment              "%.*$"
 syn region  ottMorphism             start="{{" end="}}" contains=ottVarInMorphism, ottKeywordInMorphism
 syn region  ottVarInMorphism        contained start="\[\[" end="\]\]"
-syn match   ottKeywordInMorphism    contained "\<tex\>\|\<isa\>\|\<coq\>\|\<hol\>\|\<ocaml\>\|\<com\>\|\<coq-equality\>\|\<repr-locally-nameless\>\|\<phantom\>\|\<lex\>\|\<texvar\>\|\<isavar\>\|\<holvar\>\|\<ocamlvar\>\|\<coq-equality\>\|\<ich\>\|\<ic\>\|\<ch\>\|\<ih\>\|\<isasyn\>\|\<isaprec\>\|\<isaprec\>"
+syn match   ottKeywordInMorphism    contained "\<coq-equality\>\|\<coq-preamble\>\|\<coq-universe\>\|\<tex\>\|\<isa\>\|\<coq\>\|\<hol\>\|\<ocaml\>\|\<com\>\|\<repr-locally-nameless\>\|\<phantom\>\|\<lex\>\|\<texvar\>\|\<isavar\>\|\<holvar\>\|\<ocamlvar\>\|\<ich\>\|\<ic\>\|\<ch\>\|\<ih\>\|\<isasyn\>\|\<isaprec\>\|\<isaprec\>"
 
 syn keyword ottKeyword              embed homs metavar indexvar grammar subrules
 syn keyword ottKeyword              contextrules substitutions single multiple
-syn keyword ottKeyword              freevars defns defn funs right left parsing
+syn keyword ottKeyword              freevars defns defn funs fun right left parsing
 syn keyword ottKeyword              names distinctnames union by IN
 " These keywords are more common; seems like it's more prudent to not highlight them
 " syn keyword ottKeyword              fun bind in non
